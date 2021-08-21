@@ -79,7 +79,7 @@ function draw() {
         || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
         || yPos + bird.height >= cvs.height - fg.height) {
            location.reload(); // Перезагрузка игры
-           alert('Лох ты, а не Наруто');   
+           alert('Игра окончена');   
         }
         if (pipe[i].x == 5) {
             score++;
@@ -95,7 +95,7 @@ function draw() {
 
     ctx.fillStyle = '#000';
     ctx.font = '24px Verdana';
-    ctx.fillText('Счет:' + score, 10, cvs.height - 20)
+    ctx.fillText('Счет:' +score, 10,  cvs.height - 20)
 
     requestAnimationFrame(draw);
 
