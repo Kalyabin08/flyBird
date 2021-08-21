@@ -43,7 +43,7 @@ document.addEventListener('keydown', moveUp);
   document.addEventListener('touch', moveUp);
 
 function moveUp() {
-    yPos -= 40;
+    yPos -= 45;
     fly.play();
 };
 
@@ -52,7 +52,7 @@ let score = 0;
 
 let xPos = 20;
 let yPos = 250;
-let grav = 1.5;
+let grav = 1.8;
 
 
 
