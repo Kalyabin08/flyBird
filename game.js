@@ -79,7 +79,7 @@ function draw() {
         || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
         || yPos + bird.height >= cvs.height - fg.height) {
            location.reload(); // Перезагрузка игры
-           alert('Game over');   
+           alert('Лох ты, а не Наруто');   
         }
         if (pipe[i].x == 5) {
             score++;
